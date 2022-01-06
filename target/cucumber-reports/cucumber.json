@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-06T14:42:20.690Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1636753300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demo.StepDefinitions.Commons.TestHooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify Add to cart button",
+        "description": "",
+        "id": "newspapers.com-login-validation;verify-add-to-cart-button;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 712518900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demo.StepDefinitions.Commons.TestHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12162109800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is in the VodafoneAustralia Sim Only Page",
+            "match": {
+              "location": "com.demo.StepDefinitions.VodaFone.SIMonly.openVodaFoneSimOnlyPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2821886200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user execute \"https://api-prod.prod.cms.df.services.vodafone.com.au/plan/postpaid-simo?serviceType\u003dNew\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://api-prod.prod.cms.df.services.vodafone.com.au/plan/postpaid-simo?serviceType\u003dNew",
+                  "offset": 18
+                }
+              ],
+              "location": "com.demo.StepDefinitions.VodaFone.SIMonly.getPlanInfoAPIRequest(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user checks the add to cart button label",
+            "match": {
+              "location": "com.demo.StepDefinitions.VodaFone.SIMonly.checkAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the cta add to cart button in the UI matches with the ctaLabel field",
+            "match": {
+              "location": "com.demo.StepDefinitions.VodaFone.SIMonly.verifyAddToCartButtonLabel()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Newspapers.com Login Validation",
+    "description": "",
+    "id": "newspapers.com-login-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/VodaFone/SIMonly.feature",
+    "tags": []
+  }
+]
