@@ -46,4 +46,23 @@ public class SIMonly extends BrowserUtils {
     public void verifyAddToCartButtonLabel() {
         //Assert.assertTrue(avatarExist, "The user did not redirected to dashboard page.");
     }
+
+    @When("^clicks the add to cart button of the \"(.*)\"$")
+    public void clickAddToCartButton() {
+        //Click add to cart button
+        driver.findElement(By.xpath("//*[@id='accordion-item-64']/button)"));
+        driver.findElement(By.xpath("//*[@id='accordion-item-69']/button)"));
+        driver.findElement(By.xpath("//*[@id='accordion-item-74']/button)"));
+        driver.findElement(By.xpath("//*[@id='accordion-item-79']/button)"));
+        driver.findElement(By.xpath("//*[@id='accordion-item-84']/button)"));
+
+
+
+
+    }
+
+    @Then("^the \"(.*)\" shown in the sticky cart is the same as the selected \"(.*)\"$")
+    public void verifyPriceInStickyCart() {
+        //
+    }
 }
